@@ -1,6 +1,29 @@
-import 'package:flutter/material.dart';
+// ignore_for_file: avoid_print
 
-void main() {
+import 'package:flutter/material.dart';
+import 'package:postgres/postgres.dart';
+
+Future<void> operation() async {
+  try {
+    var connection = PostgreSQLConnection(
+      "roundhouse.proxy.rlwy.net",
+      49265,
+      "railway",
+      username: "postgres",
+      password: "CGbDFF*ABcg14D632A2c666cdBBB25*e",
+      useSSL: true,
+    );
+
+    await connection.open();
+    print("Conectado a la base");
+  } catch (e) {
+    print("Error connecting to the database: $e");
+  }
+}
+
+
+void main(){
+  operation();
   runApp(const MyApp());
 }
 
