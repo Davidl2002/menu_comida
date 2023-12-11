@@ -36,10 +36,10 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   postgres: ^2.2.0
-  bottom_navy_bar: ^6.0.0
   cached_network_image: ^3.0.0
   carousel_slider: 4.2.1
   flutter_html: 2.1.2
+  uni_links: ^0.5.1
 
 dev_dependencies:
   flutter_test:
